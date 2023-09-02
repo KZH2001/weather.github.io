@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" href="./images/logo.png" type="image/icon type">
     <title>Weather</title>
 </head>
-<body>
+
+<body class="bg-black flex justify-center items-center flex-col h-[100vh]">
+    <div class=" px-[30px] py-[40px] text-center bg-[#1D7296] rounded-md">
+        <div class="bg-[white] rounded-md">
+            <input type="search" placeholder="Search by City" class="md:px-3 px-2 py-1 outline-none rounded-l-md ">
+            <ion-icon class=" mx-2 cursor-pointer  text-xl " name="search-outline"></ion-icon>
+        </div>
+        <div>
+            <img class="mx-auto block mt-10" src="./images/sunny.svg" alt="">
+            <div class="temperature mt-3 ">
+                <span class="temp text-4xl text-white font-semibold"></span> <span class="text-xl text-white font-semibold">C</span>
+            </div>
+            <div class="city mt-3">
+                <span class=" cityWeather text-4xl text-white font-semibold"></span>
+            </div>
+
+            <div class="flex justify-between mt-12">
+                <div>
+                    <span class="humidity block text-white text-start"></span>
+                    <span class="block text-white text-start">Humidity</span>
+                </div>
+
+                <div>
+                    <span class="wind block text-white text-start"> </span>
+                    <span class="block text-white text-start">Wind Speed</span>
+                </div>
+            </div>
     
+        </div>
+    </div>
+ 
+
 </body>
+
+<script src="./js/script.js"></script>
+
 </html>
