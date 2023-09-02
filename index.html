@@ -14,12 +14,15 @@
 
 <body class="bg-black flex justify-center items-center flex-col h-[100vh]">
     <div class=" px-[30px] py-[40px] text-center bg-[#1D7296] rounded-md">
-        <div class="bg-[white] rounded-md">
+        <div class="bg-[white] rounded-md search">
             <input type="search" placeholder="Search by City" class="md:px-3 px-2 py-1 outline-none rounded-l-md ">
-            <ion-icon class=" mx-2 cursor-pointer  text-xl " name="search-outline"></ion-icon>
+            <ion-icon class="searchBtn mx-2 cursor-pointer  text-xl " name="search-outline"></ion-icon>
         </div>
-        <div>
-            <img class="mx-auto block mt-10" src="./images/sunny.svg" alt="">
+        <div class="error">
+            <span class="text-[red] mr-[140px] ">Invalid City Name</span>
+        </div>
+        <div class="weather">
+            <img class=" weatherIcon mx-auto block mt-10" src="" alt="">
             <div class="temperature mt-3 ">
                 <span class="temp text-4xl text-white font-semibold"></span> <span class="text-xl text-white font-semibold">C</span>
             </div>
